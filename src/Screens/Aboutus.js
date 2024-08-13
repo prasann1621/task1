@@ -2,23 +2,33 @@
 import React from 'react';
 import Header from '../Components/Header';
 import './Aboutus.css'; // Import the CSS file for styling
-
+import anu from '../Assets/anu.png';
+import scott from '../Assets/scott.png';
+import studying from '../Assets/studying.png'; // Update path if necessary
+import Footer from '../Components/footer';
 const AboutUs = () => {
   return (
     <div className="about-us-container">
-        <Header/>    
+      <Header/>
       <div className="founders-section">
         <h2>Meet our Founders</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae congue quam. Nullam in aliquam urna. Cras scelerisque ultrices laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae congue quam. Nullam in aliquam urna. Cras scelerisque ultrices laoreet.</p>
-        <img 
-        <h3>Sophia Patel</h3>
-        <p>CO-FOUNDER & CO-CEO</p>
-        <h3>Benjamin Harrison</h3>
-        <p>Chairman</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae congue quam. Nullam in aliquam urna. Cras scelerisque ultrices laoreet.</p>
+        <div className="founder-container">
+          <div className="founder">
+            <img src={anu} alt="Sophia Patel" />
+            <h3>Sophia Patel</h3>
+            <p>CO-FOUNDER & CO-CEO</p>
+          </div>
+          <div className="founder">
+            <img src={scott} alt="Benjamin Harrison" />
+            <h3>Benjamin Harrison</h3>
+            <p>Chairman</p>
+          </div>
+        </div>
       </div>
 
       <div className="learning-section">
-        <img src="student-png.png" alt="Student" className="student-img" />
+        <img src={studying} alt="Student" className="student-img" />
         <h2>We Provide You a Comfortable Learning Experience</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed iaculis elit. Ut eu purus vitae turpis commodo dictum at.</p>
         <ul>
@@ -63,6 +73,7 @@ const AboutUs = () => {
       <div className="footer-section">
         <p>Memory Power is the top coding learning platform for young minds.</p>
       </div>
+      <Footer />
     </div>
   );
 };

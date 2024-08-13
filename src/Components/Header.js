@@ -1,17 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Header.css';
 import logo from '../Assets/logo.png';
 
-
-
 const Header = () => {
+    const navigate = useNavigate();
+
+    const handleJoinClassClick = () => {
+        navigate('FreeClassForm');
+    };
+
+    const handleBookTrialClick = () => {
+        navigate('./FreeClassForm');
+    };
+
     return (
         <header>
-           <div className="logo">
-    <img src={logo} alt="Memory Power" />
-</div>
-
-
+            <div className="logo">
+                <img src={logo} alt="Memory Power" />
+            </div>
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -21,8 +28,8 @@ const Header = () => {
                 </ul>
             </nav>
             <div className="cta-buttons">
-                <button className="join-class">Join Class</button>
-                <button className="book-trial">Book A Free Trial</button>
+                <button className="join-class" onClick={handleJoinClassClick}>Join Class</button>
+                <button className="book-trial" onClick={handleBookTrialClick}>Book A Free Trial</button>
             </div>
         </header>
     );

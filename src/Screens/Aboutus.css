@@ -1,64 +1,219 @@
-/* src/AboutUs.css */
-
+/* General Container */
 .about-us-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .logo-section {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .logo {
-    max-width: 150px;
-  }
-  
-  .founders-section, .learning-section, .benefits-section, .faq-section, .team-section, .newsletter-section, .footer-section {
-    margin-bottom: 40px;
-  }
-  
-  .founders-section h2, .learning-section h2, .benefits-section h2, .faq-section h2, .newsletter-section h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-  
-  .founders-section h3 {
-    font-size: 20px;
-    margin-top: 10px;
-  }
-  
-  .learning-section ul, .benefits-section ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .student-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .team-section blockquote {
-    font-size: 18px;
-    font-style: italic;
-    margin: 20px 0;
-  }
-  
-  .newsletter-section input[type="email"] {
-    padding: 10px;
-    width: 300px;
-    margin-right: 10px;
-  }
-  
-  .newsletter-section button {
-    padding: 10px 20px;
-  }
-  
-  .footer-section {
-    text-align: center;
-    font-size: 16px;
-    color: #555;
-  }
-  
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Founders Section */
+.founders-section {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.founders-section h2 {
+  margin-bottom: 20px;
+  color: #333; /* Dark gray text */
+}
+
+.founders-section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #555; /* Medium gray text */
+}
+
+.founders-section .founder-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.founders-section .founder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.founders-section .founder img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #007bff; /* Blue border around images */
+}
+
+.founders-section .founder h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.founders-section .founder p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Learning Section */
+.learning-section {
+  text-align: justify;
+  margin-bottom: 40px;
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.learning-section .student-img {
+  width: 600px;
+  height: auto;
+  align-items: center;
+  margin-bottom: 20px;
+/* Blue border around image */
+}
+
+.learning-section h2 {
+  margin-bottom: 20px;
+  color: #007bff; /* Blue text */
+}
+
+.learning-section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333; /* Dark gray text */
+}
+
+.learning-section ul {
+  list-style-type: disc;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Benefits Section */
+.benefits-section {
+  text-align: justify;
+  margin-bottom: 40px;
+  background-color: #f9f9f9; /* Very light gray background */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.benefits-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.benefits-section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.benefits-section ul {
+  list-style-type: disc;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+}
+
+/* FAQ Section */
+.faq-section {
+  text-align: justify;
+  margin-bottom: 40px;
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faq-section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.faq-section p {
+  font-size: 16px;
+  color: #555; /* Medium gray text */
+}
+
+/* Team Section */
+.team-section {
+  text-align: justify;
+  margin-bottom: 40px;
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.team-section blockquote {
+  font-size: 18px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-left: 4px solid #007bff; /* Blue border on left */
+  background-color: #ffffff; /* White background */
+}
+
+.team-section cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  text-align: justify;
+  margin-bottom: 40px;
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.newsletter-section h2 {
+  margin-bottom: 20px;
+  color: #007bff; /* Blue text */
+}
+
+.newsletter-section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.newsletter-section input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.newsletter-section button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-section button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.newsletter-section p:last-of-type {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Footer Section */
+.footer-section {
+  text-align: justify;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #666;
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ToggleSwitch from './ToggleSwitch';
+import ToggleSwitch from '../Components/ToggleSwitch';
 import './BookingSection.css';
 import student from '../Assets/student.png';
 

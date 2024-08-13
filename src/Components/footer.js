@@ -1,13 +1,13 @@
 import React from 'react';
 import './Footer.css'; // Import your custom CSS
-
+import logo from '../Assets/logo.png';
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-top">
           <div className="footer-logo">
-            <img src="/path-to-your-logo.png" alt="Memory Power" />
+            <img src={logo} alt="Memory Power" />
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
             <button className="read-more-btn">Read More..</button>
           </div>
@@ -15,7 +15,7 @@ function Footer() {
             <div className="important-links">
               <h3>Important Links</h3>
               <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="/Home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#founder">Meet Founder</a></li>
                 <li><a href="#certificates">Our Certificates</a></li>
