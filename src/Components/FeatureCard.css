@@ -1,0 +1,51 @@
+/* Styles for FeatureCard and FeaturesSection */
+
+
+.feature-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.333% - 20px); /* Adjust width to fit 3 cards per row */
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+}
+
+.features-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distributes space between cards */
+}
+
+.feature-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.feature-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #7F8C8D;
+}
+
+.feature-button {
+    background-color: #8BC34A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.feature-button:hover {
+    background-color: #7CB342;
+}

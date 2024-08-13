@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f5f5f5;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom right, #cfe9ff, #ffffff);
+}
+
+.logo img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="tel"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+}
+
+.phone-input .country-code {
+  padding: 10px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.phone-input input {
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+}
+
+button {
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
