@@ -1,0 +1,38 @@
+.card-carousel-container {
+    max-width: 800px;   
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-carousel-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-carousel-paragraph {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.carousel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-card img {
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.carousel .thumbs-wrapper {
+    margin: 10px 0;
+}
+
+.carousel .thumb {
+    border: 2px solid #ddd;
+    padding: 2px;
+    margin-right: 5px;
+}

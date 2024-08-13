@@ -1,23 +1,19 @@
 import React from 'react';
-import Header from './Components/Header';
-import BookingSection from './Components/BookingSection';
-import FeaturesSection from './Components/FeatureSection';
-import Footer from './Components/footer'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
-import CardCarousel from './Components/coursel';
+import Home from './Screens/Home';
+import Aboutus from './Screens/Aboutus';
+
 
 
 const App = () => {
     return (
-        <div className="App">
-            <Header/>
-            <BookingSection/>
-            <FeaturesSection/>
-            <CardCarousel/>
-            <Footer/>
-            
-           
-        </div>
+        <Router>
+            <Routes>
+                <Route path='/' element={<Home/>}/>
+                <Route path='aboutus' element={<Aboutus/>}/>
+            </Routes>
+        </Router>
     );
 };
 
