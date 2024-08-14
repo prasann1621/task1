@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.css'; // Import your custom CSS
 import logo from '../Assets/logo.png';
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'; // Import the Font Awesome icons
+
 function Footer() {
   return (
     <footer className="footer">
@@ -40,9 +42,9 @@ function Footer() {
         </div>
         <div className="footer-bottom">
           <div className="social-media">
-            <a href="#facebook"><i className="fa fa-facebook"></i></a>
-            <a href="#instagram"><i className="fa fa-instagram"></i></a>
-            <a href="#twitter"><i className="fa fa-twitter"></i></a>
+            <a href="#facebook"><FaFacebook /></a>
+            <a href="#instagram"><FaInstagram /></a>
+            <a href="#twitter"><FaTwitter /></a>
           </div>
           <p>Copyright © Memorypower 2024.</p>
         </div>

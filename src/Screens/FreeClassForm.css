@@ -3,17 +3,33 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
+.screen-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire background */
+  z-index: -1; /* Places the image behind the form */
+}
+
 .form-container {
   width: 400px;
-  margin: 100px auto;
   padding: 20px;
   border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
   text-align: center;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to bottom right, #cfe9ff, #ffffff), url('../Assets/background.jpg');
-  background-size: cover; /* Adjusts the size of the background image */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents repeating the background image */
+  z-index: 1; /* Ensures the form stays above the background image */
 }
 
 .logo img {

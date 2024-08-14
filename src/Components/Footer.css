@@ -1,5 +1,5 @@
 .footer {
-  background-color: #044A6B; /* Background color as per your image */
+  background-color: #044A6B;
   color: white;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
@@ -8,40 +8,32 @@
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .footer-logo {
   max-width: 350px;
+  flex: 1;
 }
 
 .footer-logo img {
   max-width: 150px;
-}
-
-.footer-logo p {
-  margin-top: 10px;
-  line-height: 1.5;
-}
-
-.read-more-btn {
-  background-color: #67CE67; /* Button color */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  cursor: pointer;
+  width: 100%; /* Make sure it scales */
 }
 
 .footer-links {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 2;
 }
 
 .footer-links h3 {
@@ -73,6 +65,7 @@
   margin-top: 30px;
   border-top: 1px solid #555;
   padding-top: 20px;
+  flex-wrap: wrap;
 }
 
 .social-media a {
@@ -83,4 +76,34 @@
 
 .social-media a:hover {
   color: #67CE67;
+}
+
+@media (max-width: 768px) {
+  .footer-logo img {
+      max-width: 100px;
+  }
+
+  .footer-links {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+  }
+
+  .social-media {
+      margin-top: 20px;
+  }
+}.footer .social-media a {
+  color: #ffffff; /* White color for icons */
+  margin: 0 10px;
+  font-size: 24px; /* Size of the icons */
+  transition: color 0.3s;
+}
+
+.footer .social-media a:hover {
+  color: #007bff; /* Change color on hover */
 }
