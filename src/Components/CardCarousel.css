@@ -1,17 +1,18 @@
 .card-carousel-container {
-    max-width: 800px;   
+    max-width: 90%;   
     margin: 0 auto;
     text-align: center;
+    padding: 20px;
 }
 
 .card-carousel-header {
-    font-size: 24px;
+    font-size: 1.5rem; /* Use rem for scalable fonts */
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .card-carousel-paragraph {
-    font-size: 12px;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -23,16 +24,21 @@
 
 .carousel-card img {
     max-height: 300px;
+    width: 100%;
     object-fit: cover;
     margin-bottom: 10px;
 }
 
-.carousel .thumbs-wrapper {
-    margin: 10px 0;
-}
+@media (max-width: 768px) {
+    .card-carousel-container {
+        padding: 10px;
+    }
 
-.carousel .thumb {
-    border: 2px solid #ddd;
-    padding: 2px;
-    margin-right: 5px;
+    .card-carousel-header {
+        font-size: 1.25rem;
+    }
+
+    .carousel-card img {
+        max-height: 200px;
+    }
 }
